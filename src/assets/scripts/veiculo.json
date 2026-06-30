@@ -1,0 +1,21 @@
+{
+    "veiculo": [
+    {
+      "id_veiculo": 1,
+      "cliente_id": 1,
+      "placa": "ABC1D23",
+      "chassi": "9BWZZZ377VT004251",
+      "marca": [
+        "Volkswagen",
+        "Fiat",
+        "Chevrolet",
+        "Ford",
+        "Toyota"
+      ],
+      "modelo": "Gol",
+      "ano": 2020,
+      "cor": "Prata",
+      "quilometragem": 55000
+    }
+  ]
+}

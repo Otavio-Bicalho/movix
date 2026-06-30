@@ -1,0 +1,154 @@
+{
+  "servico": [
+    {
+      "id_servico": 1,
+      "servico": "Calibrar Pneus",
+      "status": true
+    },
+    {
+      "id_servico": 2,
+      "servico": "Troca de Óleo",
+      "status": true
+    },
+    {
+      "id_servico": 3,
+      "servico": "Alinhamento",
+      "status": true
+    },
+    {
+      "id_servico": 4,
+      "servico": "Balanceamento",
+      "status": true
+    },
+    {
+      "id_servico": 5,
+      "servico": "Troca de Filtro de Óleo",
+      "status": true
+    },
+    {
+      "id_servico": 6,
+      "servico": "Troca de Filtro de Ar",
+      "status": true
+    },
+    {
+      "id_servico": 7,
+      "servico": "Troca de Pastilhas de Freio",
+      "status": true
+    },
+    {
+      "id_servico": 8,
+      "servico": "Revisão Completa",
+      "status": true
+    },
+    {
+      "id_servico": 9,
+      "servico": "Diagnóstico Eletrônico",
+      "status": true
+    },
+    {
+      "id_servico": 10,
+      "servico": "Troca de Bateria",
+      "status": true
+    },
+    {
+      "id_servico": 11,
+      "servico": "Carga de Bateria",
+      "status": true
+    },
+    {
+      "id_servico": 12,
+      "servico": "Higienização de Ar Condicionado",
+      "status": true
+    },
+    {
+      "id_servico": 13,
+      "servico": "Troca de Pneus",
+      "status": true
+    },
+    {
+      "id_servico": 14,
+      "servico": "Rodízio de Pneus",
+      "status": true
+    },
+    {
+      "id_servico": 15,
+      "servico": "Lavagem Automotiva",
+      "status": true
+    },
+    {
+      "id_servico": 16,
+      "servico": "Aspiração Interna",
+      "status": true
+    },
+    {
+      "id_servico": 17,
+      "servico": "Polimento",
+      "status": true
+    },
+    {
+      "id_servico": 18,
+      "servico": "Cristalização de Pintura",
+      "status": true
+    },
+    {
+      "id_servico": 19,
+      "servico": "Troca de Lâmpadas",
+      "status": true
+    },
+    {
+      "id_servico": 20,
+      "servico": "Completar Fluido de Freio",
+      "status": true
+    },
+    {
+      "id_servico": 21,
+      "servico": "Limpeza de Bicos Injetores",
+      "status": true
+    },
+    {
+      "id_servico": 22,
+      "servico": "Troca de Correia Dentada",
+      "status": true
+    },
+    {
+      "id_servico": 23,
+      "servico": "Serviço de Guincho",
+      "status": true
+    },
+    {
+      "id_servico": 24,
+      "servico": "Abastecimento de Gasolina",
+      "status": true
+    },
+    {
+      "id_servico": 25,
+      "servico": "Abastecimento de Etanol",
+      "status": true
+    },
+    {
+      "id_servico": 26,
+      "servico": "Abastecimento de Diesel",
+      "status": true
+    },
+    {
+      "id_servico": 27,
+      "servico": "Venda de Lubrificantes",
+      "status": true
+    },
+    {
+      "id_servico": 28,
+      "servico": "Venda de Aditivos",
+      "status": true
+    },
+    {
+      "id_servico": 29,
+      "servico": "Venda de Gelo",
+      "status": true
+    },
+    {
+      "id_servico": 30,
+      "servico": "Venda de Carvão",
+      "status": true
+    }
+  ]
+}

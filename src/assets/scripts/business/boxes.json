@@ -1,0 +1,44 @@
+{
+  "boxes": [
+    {
+      "id_boxes": 1,
+      "num_boxe": 1,
+      "estabelecimento_id": 1,
+      "ordem_servico_id": 1,
+      "veiculo_id": 1,
+      "status": true
+    },
+    {
+      "id_boxes": 2,
+      "num_boxe": 2,
+      "estabelecimento_id": 1,
+      "ordem_servico_id": 2,
+      "veiculo_id": 2,
+      "status": true
+    },
+    {
+      "id_boxes": 3,
+      "num_boxe": 3,
+      "estabelecimento_id": 1,
+      "ordem_servico_id": 3,
+      "veiculo_id": 3,
+      "status": true
+    },
+    {
+      "id_boxes": 4,
+      "num_boxe": 4,
+      "estabelecimento_id": 1,
+      "ordem_servico_id": 4,
+      "veiculo_id": 4,
+      "status": true
+    },
+    {
+      "id_boxes": 5,
+      "num_boxe": 5,
+      "estabelecimento_id": 1,
+      "ordem_servico_id": 5,
+      "veiculo_id": 5,
+      "status": true
+    }
+  ]
+}

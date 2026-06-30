@@ -1,0 +1,11 @@
+{
+    "hist_preco_combustivel": [
+        {
+            "id_hist_preco": 67890,
+            "estabelecimento_id": 25,
+            "vl_combustivel_id": 5,
+            " preco_combustivel ": 6.73,
+            " data ": "2020-02-20"
+        }
+    ]
+}

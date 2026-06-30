@@ -1,0 +1,59 @@
+{
+  "lancamento": [
+    {
+      "id_lancamento": 1,
+      "meus_veiculos_id": 2,
+      "tipo_lancamento": "Documentação",
+      "evento": "Licenciamento anual",
+      "odometro": 45230.7,
+      "data_inicio": "2025-01-10",
+      "data_fim": "2025-01-10",
+      "valor": 189.90,
+      "status": true
+    },
+    {
+      "id_lancamento": 2,
+      "meus_veiculos_id": 2,
+      "tipo_lancamento": "Manutenção",
+      "evento": "Troca de óleo e filtros",
+      "odometro": 78340.2,
+      "data_inicio": "2025-02-15",
+      "data_fim": "2025-02-15",
+      "valor": 320.50,
+      "status": true
+    },
+    {
+      "id_lancamento": 3,
+      "meus_veiculos_id": 3,
+      "tipo_lancamento": "Abastecimento",
+      "evento": "Gasolina comum",
+      "odometro": 15890.4,
+      "data_inicio": "2025-03-05",
+      "data_fim": "2025-03-05",
+      "valor": 250.00,
+      "status": true
+    },
+    {
+      "id_lancamento": 4,
+      "meus_veiculos_id": 4,
+      "tipo_lancamento": "Documentação",
+      "evento": "Renovação do seguro anual",
+      "odometro": 47000.0,
+      "data_inicio": "2025-04-01",
+      "data_fim": "2026-04-01",
+      "valor": 1850.75,
+      "status": false
+    },
+    {
+      "id_lancamento": 4,
+      "meus_veiculos_id": 3,
+      "tipo_lancamento": "Documentação",
+      "evento": "Renovação do seguro anual",
+      "odometro": 47000.0,
+      "data_inicio": "2025-04-01",
+      "data_fim": "2026-04-01",
+      "valor": 1850.75,
+      "status": false
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "cliente": [
+    {
+      "id_cliente": 1,
+      "oficina_id": 1,
+      "nome": "João da Silva",
+      "documento": "12345678900",
+      "telefone": "31999999999",
+      "email": "joao@email.com",
+      "cep": "30110000",
+      "rua": "Rua A",
+      "numero": "100",
+      "bairro": "Centro",
+      "cidade": "Belo Horizonte",
+      "uf": "MG"
+    },
+    {
+      "id_cliente": 2,
+      "oficina_id": 1,
+      "nome": "Maria Oliveira",
+      "documento": "23456789011",
+      "telefone": "31988887777",
+      "email": "maria@email.com",
+      "cep": "30120000",
+      "rua": "Rua B",
+      "numero": "250",
+      "bairro": "Savassi",
+      "cidade": "Belo Horizonte",
+      "uf": "MG"
+    },
+    {
+      "id_cliente": 3,
+      "oficina_id": 1,
+      "nome": "Pedro Santos",
+      "documento": "34567890122",
+      "telefone": "31977776666",
+      "email": "pedro@email.com",
+      "cep": "30130000",
+      "rua": "Rua C",
+      "numero": "75",
+      "bairro": "Lourdes",
+      "cidade": "Belo Horizonte",
+      "uf": "MG"
+    },
+    {
+      "id_cliente": 4,
+      "oficina_id": 1,
+      "nome": "Ana Costa",
+      "documento": "45678901233",
+      "telefone": "31966665555",
+      "email": "ana@email.com",
+      "cep": "30140000",
+      "rua": "Rua D",
+      "numero": "320",
+      "bairro": "Funcionários",
+      "cidade": "Belo Horizonte",
+      "uf": "MG"
+    },
+    {
+      "id_cliente": 5,
+      "oficina_id": 1,
+      "nome": "Lucas Pereira",
+      "documento": "56789012344",
+      "telefone": "31955554444",
+      "email": "lucas@email.com",
+      "cep": "30150000",
+      "rua": "Rua E",
+      "numero": "410",
+      "bairro": "Sion",
+      "cidade": "Belo Horizonte",
+      "uf": "MG"
+    }
+  ]
+}

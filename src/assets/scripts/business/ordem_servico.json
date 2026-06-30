@@ -1,0 +1,148 @@
+{
+  "ordem_servico": [
+    {
+      "id_ordem_servico": 1,
+      "estabelecimento_id": 1,
+      "status": "Em execução",
+      "valor": 1500.00,
+      "detalhamento_servico": "Troca de óleo e revisão geral",
+      "cliente_id": 1,
+      "veiculo_id": 1,
+      "user_interno_id": 2,
+      "previsao_entrega": "2026-06-17T17:00:00",
+      "peca_id": 1,
+      "servico_id": 1,
+      "boxes_id": 1,
+      "produtos_id": [
+        1,
+        2,
+        3
+      ],
+      "servicos": [
+        {
+          "id_servico": 1,
+          "descricao": "Troca de óleo",
+          "valor": 120.00
+        },
+        {
+          "id_servico": 2,
+          "descricao": "Alinhamento",
+          "valor": 80.00
+        }
+      ]
+    },
+    {
+      "id_ordem_servico": 2,
+      "estabelecimento_id": 1,
+      "status": "Concluído",
+      "valor": 890.00,
+      "detalhamento_servico": "Reparo no Motor",
+      "cliente_id": 2,
+      "veiculo_id": 2,
+      "user_interno_id": 2,
+      "previsao_entrega": "2026-06-16T16:00:00",
+      "peca_id": 2,
+      "servico_id": 3,
+      "boxes_id": 2,
+      "produtos_id": [
+        2,
+        4
+      ],
+      "servicos": [
+        {
+          "id_servico": 3,
+          "descricao": "Reparo no motor",
+          "valor": 700.00
+        },
+        {
+          "id_servico": 4,
+          "descricao": "Troca de velas",
+          "valor": 190.00
+        }
+      ]
+    },
+    {
+      "id_ordem_servico": 3,
+      "estabelecimento_id": 1,
+      "status": "Em execução",
+      "valor": 320.00,
+      "detalhamento_servico": "Troca de Óleo",
+      "cliente_id": 3,
+      "veiculo_id": 3,
+      "user_interno_id": 3,
+      "previsao_entrega": "2026-06-18T11:00:00",
+      "peca_id": 1,
+      "servico_id": 1,
+      "boxes_id": 3,
+      "produtos_id": [
+        1
+      ],
+      "servicos": [
+        {
+          "id_servico": 1,
+          "descricao": "Troca de óleo",
+          "valor": 320.00
+        }
+      ]
+    },
+    {
+      "id_ordem_servico": 4,
+      "estabelecimento_id": 1,
+      "status": "Aguardando Peças",
+      "valor": 1500.00,
+      "detalhamento_servico": "Serviço de Freios",
+      "cliente_id": 4,
+      "veiculo_id": 4,
+      "user_interno_id": 4,
+      "previsao_entrega": "2025-06-19T09:00:00",
+      "peca_id": 3,
+      "servico_id": 5,
+      "boxes_id": 4,
+      "produtos_id": [
+        5,
+        6
+      ],
+      "servicos": [
+        {
+          "id_servico": 5,
+          "descricao": "Troca de pastilhas de freio",
+          "valor": 900.00
+        },
+        {
+          "id_servico": 6,
+          "descricao": "Troca de discos",
+          "valor": 600.00
+        }
+      ]
+    },
+    {
+      "id_ordem_servico": 5,
+      "estabelecimento_id": 1,
+      "status": "Em execução",
+      "valor": 450.00,
+      "detalhamento_servico": "Alinhamento e Balanceamento",
+      "cliente_id": 5,
+      "veiculo_id": 5,
+      "user_interno_id": 5,
+      "previsao_entrega": "2026-06-17T15:00:00",
+      "peca_id": 4,
+      "servico_id": 2,
+      "boxes_id": 5,
+      "produtos_id": [
+        7
+      ],
+      "servicos": [
+        {
+          "id_servico": 2,
+          "descricao": "Alinhamento",
+          "valor": 250.00
+        },
+        {
+          "id_servico": 7,
+          "descricao": "Balanceamento",
+          "valor": 200.00
+        }
+      ]
+    }
+  ]
+}

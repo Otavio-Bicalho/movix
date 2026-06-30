@@ -1,0 +1,11 @@
+{
+    "abastecimento": [
+        {
+            "id_abastecimento": 1,
+            "estabelecimento_id": 2,
+            "vl_combustivel_id": 1,
+            "lancamento_id": 3,
+            "tipo_combustivel_id": 1
+        }
+    ]
+}

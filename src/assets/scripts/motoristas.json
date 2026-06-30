@@ -1,0 +1,41 @@
+{
+    "motoristas": [
+        {
+            "id_motorista": 1,
+            "usuario_id": 1,
+            "nome": "Otávio Bicalho",
+            "cpf": "505078454545",
+            "email": "a@gmail.com",
+            "telefone": "(31) 98888-7777",
+            "status": true
+        },
+        {
+            "id_motorista": 2,
+            "usuario_id": 1,
+            "nome": "Marcos Vinicius",
+            "cpf": "12345678900",
+            "email": "marcos.vinicius@gmail.com",
+            "telefone": "(11) 98765-4321",
+            "status": true
+        },
+        {
+            "id_motorista": 3,
+            "usuario_id": 2,
+            "nome": "Fernanda Oliveira",
+            "cpf": "98765432100",
+            "email": "fernanda.oliveira@gmail.com",
+            "telefone": "(21) 99876-1122",
+            "status": false
+        },
+        {
+            "id_motorista": 4,
+            "usuario_id": 3,
+            "nome": "Ricardo Almeida",
+            "cpf": "45678912355",
+            "email": "ricardo.almeida@gmail.com",
+            "telefone": "(31) 99123-4455",
+            "status": true
+        }
+    ]
+
+}

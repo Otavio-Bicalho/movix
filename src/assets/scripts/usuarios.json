@@ -1,0 +1,34 @@
+{
+    "usuarios": [
+        {
+            "id_usuario": 1,
+            "nome": "Otávio de Souza Bicalho",
+            "email": "781817@sga.pucminas.br",
+            "telefone": "(31) 99799-3855",
+            "cpf": 1223222525,
+            "senha": "ahuahikudjh",
+            "cnpj": null,
+            "status": true
+        },
+        {
+            "id_usuario": 2,
+            "nome": "Filipe Sales",
+            "email": "email@sga.pucminas.br",
+            "telefone": "(31) 99799-8888",
+            "cpf": 1223222523,
+            "senha": "quadrado",
+            "cnpj": null,
+            "status": true
+        },
+        {
+            "id_usuario": 3,
+            "nome": "Lucas Avelar Rodrigues Seixas",
+            "email": "amadodedeus22@sga.pucminas.br",
+            "telefone": "(31) 99112-8888",
+            "cpf": 1223222529,
+            "senha": "quadrado22",
+            "cnpj": null,
+            "status": true
+        }
+    ]
+}

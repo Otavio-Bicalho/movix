@@ -1,0 +1,59 @@
+{
+    "caracteristicas": [
+        {
+            "id_caracteristicas": 1,
+            "descricao": "Funciona 24 horas",
+            "status": true
+        },
+        {
+            "id_caracteristicas": 2,
+            "descricao": "Wi-Fi gratuito",
+            "status": true
+        },
+        {
+            "id_caracteristicas": 3,
+            "descricao": "Estacionamento",
+            "status": true
+        },
+        {
+            "id_caracteristicas": 4,
+            "descricao": "Banheiro para clientes",
+            "status": true
+        },
+        {
+            "id_caracteristicas": 5,
+            "descricao": "Loja de conveniência",
+            "status": true
+        },
+        {
+            "id_caracteristicas": 6,
+            "descricao": "Área de descanso",
+            "status": true
+        },
+        {
+            "id_caracteristicas": 7,
+            "descricao": "Aceita pagamento via PIX",
+            "status": true
+        },
+        {
+            "id_caracteristicas": 8,
+            "descricao": "Aceita cartão de crédito e débito",
+            "status": true
+        },
+        {
+            "id_caracteristicas": 9,
+            "descricao": "Atendimento emergencial",
+            "status": true
+        },
+        {
+            "id_caracteristicas": 10,
+            "descricao": "Ponto de calibragem de pneus",
+            "status": true
+        },
+        {
+            "id_caracteristicas": 11,
+            "descricao": "Possui hospedagem (hotel anexo)",
+            "status": true
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+  "oficina": [
+    {
+      "id_oficina": 1,
+      "estabelecimento_id": 1,
+      "nome_oficina": "Mecânica Pro Centro",
+      "telefone_comercial": "3133334444",
+      "email_comercial": "contato@oficina.com.br",
+      "matriz": true,
+      "filial": false,
+      "numero_boxes": 10,
+      "horario_func_inicial": "08:00:00",
+      "horario_func_final": "18:00:00",
+      "horario_sabado": "12:00:00",
+      "horario_sabado_final": "12:00:00"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "veiculo": [
+    {
+      "id_veiculo": 1,
+      "cliente_id": 1,
+      "placa": "ABC1D23",
+      "chassi": "9BWZZZ377VT004251",
+      "marca": "Volkswagen", 
+      "modelo": "Gol",
+      "ano": 2020,
+      "cor": "Prata",
+      "quilometragem": 55000
+    },
+    {
+      "id_veiculo": 2,
+      "cliente_id": 2,
+      "placa": "DEF2G34",
+      "chassi": "93HFA16508Z112233",
+      "marca": "Honda",
+      "modelo": "Honda Civic",
+      "ano": 2019,
+      "cor": "Preto",
+      "quilometragem": 68000
+    },
+    {
+      "id_veiculo": 3,
+      "cliente_id": 3,
+      "placa": "GHI3J45",
+      "chassi": "9BRBLWHE0J0445566",
+      "marca": "Toyota",
+      "modelo": "Toyota Corolla",
+      "ano": 2021,
+      "cor": "Branco",
+      "quilometragem": 32000
+    },
+    {
+      "id_veiculo": 4,
+      "cliente_id": 4,
+      "placa": "JKL4M56",
+      "chassi": "WBAFR9105BC778899",
+      "marca": "BMW",
+      "modelo": "BMW X5",
+      "ano": 2018,
+      "cor": "Cinza",
+      "quilometragem": 89000
+    },
+    {
+      "id_veiculo": 5,
+      "cliente_id": 5,
+      "placa": "MNO5P67",
+      "chassi": "9BFZK53A4M8001122",
+      "marca": "Ford",
+      "modelo": "Ford Ka",
+      "ano": 2022,
+      "cor": "Vermelho",
+      "quilometragem": 18000
+    }
+  ]
+}

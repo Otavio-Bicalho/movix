@@ -1,0 +1,39 @@
+{
+    "tipo_combustivel": [
+        {
+            "id_tipo_combustivel": 1,
+            "combustivel": "Gasolina Comum",
+            "status": true
+        },
+        {
+            "id_tipo_combustivel": 2,
+            "combustivel": "Gasolina Aditivada",
+            "status": true
+        },
+        {
+            "id_tipo_combustivel": 3,
+            "combustivel": "Etanol",
+            "status": true
+        },
+        {
+            "id_tipo_combustivel": 4,
+            "combustivel": "Diesel S10",
+            "status": true
+        },
+        {
+            "id_tipo_combustivel": 5,
+            "combustivel": "Diesel S500",
+            "status": true
+        },
+        {
+            "id_tipo_combustivel": 6,
+            "combustivel": "GNV",
+            "status": true
+        },
+        {
+            "id_tipo_combustivel": 7,
+            "combustivel": "CCS2",
+            "status": true
+        }
+    ]
+}

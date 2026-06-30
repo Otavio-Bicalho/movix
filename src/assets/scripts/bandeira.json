@@ -1,0 +1,219 @@
+{
+  "bandeira": [
+    {
+      "id_bandeira": 1,
+      "bandeira": "IPIRANGA",
+      "status": true
+    },
+    {
+      "id_bandeira": 2,
+      "bandeira": "MAXSUL",
+      "status": true
+    },
+    {
+      "id_bandeira": 3,
+      "bandeira": "BANDEIRA BRANCA",
+      "status": true
+    },
+    {
+      "id_bandeira": 4,
+      "bandeira": "RAIZEN",
+      "status": true
+    },
+    {
+      "id_bandeira": 5,
+      "bandeira": "VIBRA",
+      "status": true
+    },
+    {
+      "id_bandeira": 6,
+      "bandeira": "ALE",
+      "status": true
+    },
+    {
+      "id_bandeira": 7,
+      "bandeira": "ON PETRO",
+      "status": true
+    },
+    {
+      "id_bandeira": 8,
+      "bandeira": "ROYAL FIC",
+      "status": true
+    },
+    {
+      "id_bandeira": 9,
+      "bandeira": "RAIZEN MIME",
+      "status": true
+    },
+    {
+      "id_bandeira": 10,
+      "bandeira": "TEMAPE",
+      "status": true
+    },
+    {
+      "id_bandeira": 11,
+      "bandeira": "ATLÂNTICA",
+      "status": true
+    },
+    {
+      "id_bandeira": 12,
+      "bandeira": "CIAPETRO",
+      "status": true
+    },
+    {
+      "id_bandeira": 13,
+      "bandeira": "NEXTA",
+      "status": true
+    },
+    {
+      "id_bandeira": 14,
+      "bandeira": "TAURUS",
+      "status": true
+    },
+    {
+      "id_bandeira": 15,
+      "bandeira": "RIO BRANCO",
+      "status": true
+    },
+    {
+      "id_bandeira": 16,
+      "bandeira": "EQUADOR",
+      "status": true
+    },
+    {
+      "id_bandeira": 17,
+      "bandeira": "PETROBAHIA",
+      "status": true
+    },
+    {
+      "id_bandeira": 18,
+      "bandeira": "SABBÁ",
+      "status": true
+    },
+    {
+      "id_bandeira": 19,
+      "bandeira": "STANG",
+      "status": true
+    },
+    {
+      "id_bandeira": 20,
+      "bandeira": "FAN",
+      "status": true
+    },
+    {
+      "id_bandeira": 21,
+      "bandeira": "POTENCIAL",
+      "status": true
+    },
+    {
+      "id_bandeira": 22,
+      "bandeira": "DISLUB",
+      "status": true
+    },
+    {
+      "id_bandeira": 23,
+      "bandeira": "SP",
+      "status": true
+    },
+    {
+      "id_bandeira": 24,
+      "bandeira": "RODOIL",
+      "status": true
+    },
+    {
+      "id_bandeira": 25,
+      "bandeira": "CHARRUA",
+      "status": true
+    },
+    {
+      "id_bandeira": 26,
+      "bandeira": "SIM DISTRIBUIDOR",
+      "status": true
+    },
+    {
+      "id_bandeira": 27,
+      "bandeira": "DIBRAPE",
+      "status": true
+    },
+    {
+      "id_bandeira": 28,
+      "bandeira": "ATEMS",
+      "status": true
+    },
+    {
+      "id_bandeira": 29,
+      "bandeira": "WATT",
+      "status": true
+    },
+    {
+      "id_bandeira": 30,
+      "bandeira": "RDP ENERGIA",
+      "status": true
+    },
+    {
+      "id_bandeira": 31,
+      "bandeira": "PETROX DISTRIBUIDORA",
+      "status": true
+    },
+    {
+      "id_bandeira": 32,
+      "bandeira": "LARCO",
+      "status": true
+    },
+    {
+      "id_bandeira": 33,
+      "bandeira": "AIR BP",
+      "status": true
+    },
+    {
+      "id_bandeira": 34,
+      "bandeira": "TORRAO",
+      "status": true
+    },
+    {
+      "id_bandeira": 35,
+      "bandeira": "WALENDOWSKY",
+      "status": true
+    },
+    {
+      "id_bandeira": 36,
+      "bandeira": "IDAZA",
+      "status": true
+    },
+    {
+      "id_bandeira": 37,
+      "bandeira": "ESTRADA",
+      "status": true
+    },
+    {
+      "id_bandeira": 38,
+      "bandeira": "AMERICANOIL",
+      "status": true
+    },
+    {
+      "id_bandeira": 39,
+      "bandeira": "TDC DISTRIBUIDORA",
+      "status": true
+    },
+    {
+      "id_bandeira": 40,
+      "bandeira": "SETTA DISTRIBUIDORA",
+      "status": true
+    },
+    {
+      "id_bandeira": 41,
+      "bandeira": "SANTA LUCIA",
+      "status": true
+    },
+    {
+      "id_bandeira": 42,
+      "bandeira": "SMALL",
+      "status": true
+    },
+    {
+      "id_bandeira": 43,
+      "bandeira": "HORA",
+      "status": true
+    }
+  ]
+}

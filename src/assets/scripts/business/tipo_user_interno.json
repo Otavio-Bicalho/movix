@@ -1,0 +1,16 @@
+{
+  "tipo_user_interno": [
+    {
+      "tipo_user_interno_id": 1,
+      "tipo_user": "Administrador"
+    },
+    {
+      "tipo_user_interno_id": 2,
+      "tipo_user": "Mecânico"
+    },
+    {
+      "tipo_user_interno_id": 3,
+      "tipo_user": "Recepcionista"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "tipos_estabelecimentos": [
+    {
+      "id": 1,
+      "descricao": "Posto de Gasolina",
+      "status": true
+    },
+    {
+      "id": 2,
+      "descricao": "Oficina Mecânica",
+      "status": true
+    },
+    {
+      "id": 3,
+      "descricao": "Ponto de Recarga",
+      "status": true
+    },
+    {
+      "id": 4,
+      "descricao": "Locadora de Veículos",
+      "status": false
+    },
+    {
+      "id": 5,
+      "descricao": "Concecionária",
+      "status": false
+    }
+  ]
+}

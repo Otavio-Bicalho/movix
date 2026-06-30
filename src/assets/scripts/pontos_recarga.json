@@ -1,0 +1,35 @@
+[
+  {
+    "ID": 123456,
+    "UUID": "abc123",
+    "DataProviderID": 1,
+    "OperatorID": 45,
+    "UsageTypeID": 1,
+    "AddressInfo": {
+      "ID": 98765,
+      "Title": "Estação de Recarga Shopping",
+      "AddressLine1": "Av. Exemplo, 1000",
+      "Town": "Belo Horizonte",
+      "StateOrProvince": "Minas Gerais",
+      "Postcode": "30100-000",
+      "CountryID": 26,
+      "Latitude": -19.9167,
+      "Longitude": -43.9345,
+      "Distance": 2.3,
+      "DistanceUnit": 1
+    },
+    "Connections": [
+      {
+        "ID": 1111,
+        "ConnectionTypeID": 33,
+        "LevelID": 3,
+        "PowerKW": 50,
+        "CurrentTypeID": 30,
+        "Quantity": 2
+      }
+    ],
+    "NumberOfPoints": 2,
+    "StatusTypeID": 50,
+    "DateLastStatusUpdate": "2026-05-30T10:00:00Z"
+  }
+]

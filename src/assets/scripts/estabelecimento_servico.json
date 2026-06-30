@@ -1,0 +1,22 @@
+{
+    "estabelecimento_servico": [
+        {
+            "id_estabelecimento_servico": 1,
+            "estabelecimento_id": 1,
+            "servico_id": 1,
+            "tempo_medio": 50, //EM MINUTO
+            "valor": 50.00,
+            "descricao": "TEXT",
+            "status": true
+        },
+        {
+            "id_estabelecimento_servico": 2,
+            "estabelecimento_id": 1,
+            "servico_id": 2,
+            "tempo_medio": 120, /*EM MINUTO*/
+            "valor": 150.00,
+            "descricao": "TEXT",
+            "status": true
+        }
+    ]
+}

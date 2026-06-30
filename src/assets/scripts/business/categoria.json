@@ -1,0 +1,54 @@
+{
+  "categoria": [
+    {
+      "id_categoria": 1,
+      "descricao": "Peças de Motor",
+      "status": true
+    },
+    {
+      "id_categoria": 2,
+      "descricao": "Sistema de Freios",
+      "status": true
+    },
+    {
+      "id_categoria": 3,
+      "descricao": "Suspensão e Direção",
+      "status": true
+    },
+    {
+      "id_categoria": 4,
+      "descricao": "Filtros Automotivos",
+      "status": true
+    },
+    {
+      "id_categoria": 5,
+      "descricao": "Lubrificantes e Óleos",
+      "status": true
+    },
+    {
+      "id_categoria": 6,
+      "descricao": "Baterias e Elétrica",
+      "status": true
+    },
+    {
+      "id_categoria": 7,
+      "descricao": "Pneus e Rodas",
+      "status": true
+    },
+    {
+      "id_categoria": 8,
+      "descricao": "Acessórios Internos",
+      "status": true
+    },
+    {
+      "id_categoria": 9,
+      "descricao": "Acessórios Externos",
+      "status": true
+    },
+    {
+      "id_categoria": 10,
+      "descricao": "Ferramentas Automotivas",
+      "status": true
+    }
+  ]
+}

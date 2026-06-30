@@ -1,0 +1,16 @@
+{
+    "produto": [
+        {
+            "id_produto": 1,
+            "categoria_id": 3,
+            "estabelecimento_id": 1222,
+            "nome": "Nome do produto",
+            "descricao": "TEXT",
+            "valor": 90.99,
+            "imagem": "URL",
+            "status": true,
+            "deletado": false
+        }
+    ]
+
+}
