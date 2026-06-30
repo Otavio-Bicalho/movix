@@ -1,0 +1,425 @@
+@import url('https://fonts.googleapis.com/css2?family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: "Kodchasan", sans-serif;
+}
+
+body {
+    font-family: "Kodchasan", sans-serif;
+    font-weight: 400;
+    margin: 0;
+    background: #F5F5F5;
+    color: #111;
+}
+
+.app-layout {
+    display: flex;
+    min-height: 100vh;
+}
+
+
+.biz-sidebar {
+    width: 230px;
+    flex-shrink: 0;
+    background: #ffffff;
+    border-right: 1px solid #EAEAEA;
+    display: flex;
+    flex-direction: column;
+    padding: 28px 0;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    padding-bottom: 20px;
+}
+
+.biz-logo {
+    margin-bottom: 30px;
+    padding-left: 6px;
+    text-align: center;
+}
+
+.biz-logo h1 {
+    font-family: "Kodchasan", sans-serif;
+    font-weight: 300;
+    font-size: 28px;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+.biz-logo span {
+    font-size: 13px;
+    color: #9A9A9A;
+    font-weight: 400;
+}
+
+.biz-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.biz-nav a{
+    color: rgba(80, 95, 118, 1);
+
+}
+
+.biz-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 14px;
+    border-radius: 10px;
+    color: #555;
+    text-decoration: none;
+    font-family: "Kodchasan", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    border: none;
+    background: none;
+    cursor: pointer;
+    text-align: left;
+    width: 100%;
+}
+
+.biz-item svg {
+    flex-shrink: 0;
+}
+.biz-item img {
+    width: 18px;
+    height: 18px;
+}
+.biz-item.active img {
+    width: 20px;
+    height: 16px;
+}
+.biz-item:hover {
+    background: #F5F5F5;
+}
+
+.biz-item.active {
+    background: rgba(208, 225, 251, 0.2);
+    color: #111111;
+    font-weight: 600;
+    border-left: 5px solid #111111;
+    border-radius: 0;
+    padding-left: 11px;
+}
+
+.biz-nav-spacer {
+    margin-top: auto;
+}
+
+.biz-nova-ordem {
+    margin-top: auto;
+    border: none;
+    padding: 0;
+    font-family: "Kodchasan", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    text-align: center;
+    background: none;
+} 
+.biz-nova-ordem img {
+    width: 85%;
+    height: auto;
+    display: block;
+}
+
+
+.biz-main {
+    flex: 1;
+    padding: 26px 36px 40px;
+    min-width: 0;
+}
+
+.biz-breadcrumb {
+    color: #B0B0B0;
+    font-size: 14px;
+    margin-bottom: 14px;
+}
+
+
+.biz-topbar {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 28px;
+    border-bottom: 1px solid #EAEAEA;
+    padding-bottom: 26px;
+    margin-left: -36px;
+    margin-right: -36px;
+    padding-left: 36px;
+    padding-right: 36px;
+}
+
+.biz-search {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: rgba(240, 237, 239, 1);
+    border: 1px solid #E2E2E2;
+    border-radius: 9999px;
+    padding: 8px 16px;
+}
+
+.biz-search svg {
+    flex-shrink: 0;
+    color: #B0B0B0;
+}
+
+.biz-search input {
+    border: none;
+    outline: none;
+    flex: 1;
+    font-family: "Kodchasan", sans-serif;
+    font-size: 15px;
+    background: transparent;
+}
+
+.biz-oficina {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #E2E2E2;
+    background: rgba(240, 237, 239, 1);
+    border-radius: 12px;
+    padding: 0px 16px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.biz-oficina-eyebrow {
+    font-size: 10px;
+    color: #B0B0B0;
+    letter-spacing: 0.5px;
+}
+.biz-oficina-texto {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.biz-oficina-nome {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    font-weight: 500;
+}
+.biz-oficina img {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0; 
+}
+
+.biz-user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    white-space: nowrap;
+}
+
+.biz-user-info {
+    text-align: right;
+    line-height: 1.3;
+}
+
+.biz-user-info strong {
+    font-size: 14px;
+    font-weight: 500;
+    display: block;
+}
+
+.biz-user-info span {
+    font-size: 11px;
+    color: #B0B0B0;
+}
+
+.biz-avatar {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: #1F2937;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 600;
+    flex-shrink: 0;
+}
+
+
+.modal-overlay {
+    font-family: "Kodchasan", sans-serif;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.modal-overlay.escondido {
+    display: none !important;
+}
+
+.modal-box {
+    width: 500px;
+    max-width: 90vw;
+    background: white;
+    border-radius: 22px;
+    padding: 35px;
+    text-align: center;
+}
+
+.modal-box h2 {
+    font-size: 28px;
+    margin-bottom: 18px;
+}
+
+.modal-box p {
+    font-size: 15px;
+    line-height: 1.5;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.modal-botoes {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+}
+
+.btn-cancelar-modal {
+    width: 170px;
+    height: 45px;
+    border: 1px solid #D9D9D9;
+    border-radius: 12px;
+    background: white;
+    cursor: pointer;
+    font-family: "Kodchasan", sans-serif;
+    font-size: 15px;
+}
+
+.btn-confirmar-delete {
+    width: 210px;
+    height: 45px;
+    border: none;
+    border-radius: 12px;
+    background: #D9534F;
+    color: white;
+    cursor: pointer;
+    font-family: "Kodchasan", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+}
+ .biz-menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    flex-shrink: 0;
+}
+.biz-menu-btn svg {
+    pointer-events: none;
+}
+
+@media (max-width: 1024px) {
+    .biz-sidebar {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        height: 100vh;
+        width: 230px;
+        box-shadow: 4px 0 20px rgba(0,0,0,0.15);
+    }
+
+    .biz-sidebar.aberto {
+        display: flex;
+    }
+
+    .biz-menu-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .biz-main { padding: 20px; }
+
+    .biz-topbar {
+        flex-wrap: wrap;
+        margin-left: -20px;
+        margin-right: -20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .biz-main { padding: 15px; }
+
+    .biz-topbar {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+        margin-left: -15px;
+        margin-right: -15px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .biz-search { width: 100%; }
+    .biz-oficina { width: 100%; }
+    .biz-user { justify-content: center; }
+    .biz-user-info { text-align: center; }
+    .modal-botoes { flex-direction: column; align-items: stretch; }
+    .btn-cancelar-modal, .btn-confirmar-delete { width: 100%; }
+}
+
+@media (max-width: 480px) {
+    .biz-main { padding: 12px; }
+    .modal-box { padding: 20px; }
+    .modal-box h2 { font-size: 20px; }
+}
+
+
+
+ @media (max-width: 768px) {
+    .biz-main { padding: 15px; }
+
+    .biz-topbar {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        gap: 10px;
+        margin-left: -15px;
+        margin-right: -15px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .biz-search { display: none; }
+    .biz-oficina { display: none; }
+
+    .biz-user {
+        justify-content: flex-end;
+        margin-left: auto;
+    }
+
+    .biz-user-info { text-align: right; }
+    .modal-botoes { flex-direction: column; align-items: stretch; }
+    .btn-cancelar-modal, .btn-confirmar-delete { width: 100%; }
+}  

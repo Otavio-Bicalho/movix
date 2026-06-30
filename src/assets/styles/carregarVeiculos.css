@@ -1,0 +1,455 @@
+* {
+    font-family: "Kodchasan", sans-serif;
+    box-sizing: border-box;
+}
+
+
+.container {
+    width: 100%;
+    max-width: 100%;
+    padding: 10px 55px;
+    margin: 0;
+}
+
+#cards-veiculos {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    font-family: "Kodchasan", sans-serif;
+}
+
+
+.card-veiculo {
+    width: 100%;
+    min-height: 68px;
+    border: 1px solid #D9D9D9;
+    border-radius: 16px;
+    background: white;
+    padding: 0 24px;
+    transition: 0.3s ease;
+    overflow: visible;
+}
+
+.card-veiculo.ativo {
+    min-height: auto;
+}
+
+
+.topo-card {
+    min-height: 68px;
+    display: grid;
+    grid-template-columns: 2.5fr 1fr 0.8fr 1fr 36px;
+    align-items: center;
+    gap: 16px;
+    cursor: pointer;
+}
+
+.header-esquerda {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.veiculo-nome {
+    font-size: 18px;           /* era 32px – muito grande */
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.topo-item {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.topo-item span {
+    font-size: 11px;           /* label do topo – aumentado levemente */
+    font-weight: 600;
+    color: #555;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+}
+
+.topo-item p {
+    font-size: 14px;           /* era 20px */
+    margin: 0;
+}
+
+.motorista {
+    margin-right: 8px;
+    font-weight: 500;
+}
+
+
+.status-ativo {
+    background: #8BE6A3;
+    border-radius: 20px;
+    padding: 3px 12px;
+    width: fit-content;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.status-inativo {
+    background: #FFB3B3;
+    color: #B00020;
+    border-radius: 20px;
+    padding: 3px 12px;
+    width: fit-content;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+
+.seta {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* ── Infos expandidas ────────────────────────────── */
+.infos {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 0.3s ease, max-height 0.3s ease, padding 0.3s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 24px;
+    width: 100%;
+}
+
+.infos.ativo {
+    opacity: 1;
+    max-height: 1000px;
+    padding: 20px 0 24px;
+}
+
+/* ── Lado esquerdo – campos ──────────────────────── */
+.lado-esquerdo {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.campo label {
+    font-size: 11px;           /* era 11px mas sem padding excessivo */
+    font-weight: 700;
+    color: #444;
+    text-align: left;
+    padding: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+}
+
+.valor {
+    border: 1px solid #D9D9D9;
+    border-radius: 8px;
+    padding: 5px 10px;
+    min-height: 30px;
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    width: 100%;
+    justify-content: center;
+}
+
+/* ── Cronograma ──────────────────────────────────── */
+.cronograma {
+    width: 300px;
+    min-width: 280px;
+    min-height: 220px;
+    border: 1px solid #D9D9D9;
+    border-radius: 18px;
+    padding: 18px;
+    flex-shrink: 0;
+}
+
+.cronograma h2 {
+    text-align: center;
+    font-size: 18px;           /* era 28px */
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.evento {
+    margin-bottom: 16px;
+}
+
+.evento p {
+    font-size: 13px;
+    margin-bottom: 3px;
+}
+
+.evento strong {
+    font-size: 14px;
+}
+
+.btn-cronograma {
+    width: 100%;
+    height: 36px;
+    border: none;
+    border-radius: 20px;
+    background: #232323;
+    color: white;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+/* ── Menu de opções (3 pontos) ───────────────────── */
+.menu-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.btn-opcoes {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.menu-opcoes {
+    position: absolute;
+    top: 35px;
+    left: 0;
+    width: 160px;
+    background: white;
+    border: 1px solid #D9D9D9;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.12);
+    overflow: hidden;
+    z-index: 999;
+}
+
+.opcao-menu {
+    display: block;
+    width: 100%;
+    padding: 12px 16px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+    font-size: 14px;
+    text-align: left;
+}
+
+.opcao-menu:hover {
+    background: #F5F5F5;
+}
+
+.btn-deletar,
+.btn-detalhes,
+.btn-editar {
+    background: none;
+    border: none;
+}
+
+.btn-deletar {
+    color: #D11A2A;
+}
+
+/* ── Modal de exclusão ───────────────────────────── */
+.modal-overlay {
+    font-family: "Kodchasan", sans-serif;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.modal-overlay.escondido {
+    display: none !important;
+}
+
+.modal-box {
+    width: 460px;
+    max-width: 90vw;
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+}
+
+.modal-box h2 {
+    font-size: 22px;
+    margin-bottom: 14px;
+}
+
+.modal-box p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 24px;
+}
+
+.modal-botoes {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+.btn-cancelar-modal {
+    width: 160px;
+    height: 42px;
+    border: 1px solid #D9D9D9;
+    border-radius: 10px;
+    background: white;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.btn-confirmar-delete {
+    width: 200px;
+    height: 42px;
+    border: none;
+    border-radius: 10px;
+    background: #D9534F;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* ── Utilitários ─────────────────────────────────── */
+.escondido {
+    display: none !important;
+}
+
+/* ── Responsivo ──────────────────────────────────── */
+@media (max-width: 1200px) {
+    .infos {
+        flex-direction: column;
+    }
+
+    .cronograma {
+        width: 100%;
+        min-width: 100%;
+    }
+
+    .lado-esquerdo {
+        grid-template-columns: repeat(3, 1fr);
+        width: 100%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .container {
+        padding: 0 20px;
+    }
+
+    .topo-card {
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+        padding: 14px 0;
+        min-height: auto;
+    }
+
+    .seta {
+        grid-column: 2;
+        grid-row: 1;
+        justify-self: end;
+        align-self: start;
+        padding-top: 4px;
+    }
+
+    .veiculo-nome {
+        font-size: 16px;
+        white-space: normal;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 16px;
+    }
+
+    .card-veiculo {
+        padding: 0 16px;
+        border-radius: 12px;
+    }
+
+    .topo-card {
+        grid-template-columns: 1fr auto;
+        gap: 10px;
+        padding: 14px 0;
+    }
+
+    /* Os itens do meio ficam abaixo do nome */
+    .header-esquerda {
+        grid-column: 1 / -1;
+        order: 1;
+    }
+
+    .topo-item:nth-child(2) { order: 2; }
+    .topo-item:nth-child(3) { order: 3; }
+    .topo-item:nth-child(4) { order: 4; }
+    .seta                   { order: 0; grid-column: 2; grid-row: 1; }
+
+    .topo-card {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .header-esquerda {
+        flex: 1 0 100%;
+    }
+
+    .topo-item {
+        flex: 1 1 calc(50% - 8px);
+        min-width: 120px;
+    }
+
+    .seta {
+        flex: 0 0 auto;
+        margin-left: auto;
+    }
+
+    .veiculo-nome {
+        font-size: 15px;
+    }
+
+    .lado-esquerdo {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cronograma h2 {
+        font-size: 16px;
+    }
+
+    .modal-box h2 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .topo-item {
+        flex: 1 1 100%;
+    }
+
+    .lado-esquerdo {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .btn-cancelar-modal,
+    .btn-confirmar-delete {
+        width: 100%;
+    }
+}

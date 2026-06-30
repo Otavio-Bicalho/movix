@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Kodchasan:wght@400;600&display=swap');
+
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  font-family: 'Kodchasan', sans-serif;
+  background: #ffffff;
+  color: #111111;
+  display: flex;
+  justify-content: center;
+}
+
+.phone {
+  width: 390px;
+  min-height: 100vh;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  padding: 0 28px;
+}
+
+
+.logo-block {
+  text-align: center;
+}
+
+
+.logo-block--login {
+  padding-top: 130px;
+  margin-bottom: 44px;
+}
+
+.logo-block--cadastro {
+  padding-top: 48px;
+  margin-bottom: 22px;
+}
+
+.logo-title {
+  font-size: 64px;
+  font-weight: 400;
+  letter-spacing: -1px;
+  line-height: 1;
+  color: #111111;
+}
+
+.logo-sub {
+  font-size: 15px;
+  font-weight: 400;
+  color: #111111;
+  margin-top: 2px;
+}
+
+.field {
+  margin-bottom: 12px;
+}
+
+.field label {
+  display: block;
+  font-size: 15px;
+  font-weight: 400;
+  color: #111111;
+  margin-bottom: 4px;
+}
+
+.field input {
+  width: 100%;
+  height: 44px;
+  border: 1.5px solid #111111;
+  border-radius: 10px;
+  padding: 0 16px;
+  font-family: 'Kodchasan', sans-serif;
+  font-size: 15px;
+  color: #111111;
+  background: #ffffff;
+  outline: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.field input:focus {
+  border-color: #111111;
+}
+
+
+.btn-primary {
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  height: 50px;
+  background: #111111;
+  color: #ffffff;
+  border: none;
+  border-radius: 25px;
+  font-family: 'Kodchasan', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 10px;
+  text-align: center;
+  line-height: 50px;
+}
+
+.link-row {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  color: #111111;
+  margin-top: 14px;
+}
+
+.link-row a {
+  color: #b300cc;
+  text-decoration: none;
+}
+
+.footer {
+  margin-top: auto;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+.footer a {
+  font-size: 15px;
+  font-weight: 400;
+  color: #b300cc;
+  text-decoration: none;
+}
+
+/* ══════════════════════════════════════════
+   MENSAGENS DE ERRO
+══════════════════════════════════════════ */
+.erro-msg {
+  display: none;
+  background: #ffeaea;
+  border: 1.5px solid #ffb3b3;
+  border-radius: 10px;
+  color: #c0001a;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 10px 14px;
+  margin-bottom: 12px;
+  line-height: 1.4;
+  text-align: center;
+}
+.erro-msg.show { display: block; }
+
+button.btn-primary { border: none; cursor: pointer; }

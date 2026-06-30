@@ -1,0 +1,187 @@
+*{
+    font-family: "Kodchasan", sans-serif;
+}
+
+.topbar-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-left: auto;
+    flex-shrink: 0;
+}
+
+.btn-cancelar-form {
+    background: #ffffff;
+    border: 1px solid #E2E2E2;
+    border-radius: 10px;
+    padding: 10px 22px;
+    font-family: "Kodchasan", sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: flex-end;
+}
+
+.btn-cancelar-form:hover {
+    background: #F5F5F5;
+}
+
+.btn-salvar-form {
+    background: #111111;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 22px;
+    font-family: "Kodchasan", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content:flex-end;
+    text-align:end;
+}
+
+.btn-salvar-form:hover {
+    background: #333333;
+}
+
+
+.form-page-title {
+    font-size: 26px;
+    font-weight: 600;
+    margin: 0 0 24px;
+}
+.page-header-actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+
+.page-header-actions .form-page-title {
+    margin: 0;
+}
+
+.page-header-actions .topbar-actions {
+    margin-left: auto;
+}
+
+
+.form-usuario-layout {
+    display: grid;
+    grid-template-columns: 1fr 340px;
+    gap: 22px;
+    align-items: start;
+}
+
+
+
+
+.form-section {
+    background: #ffffff;
+    border: 1px solid #EAEAEA;
+    border-radius: 18px;
+    padding: 26px;
+    margin-bottom: 18px;
+}
+
+.form-section:last-child {
+    margin-bottom: 0;
+}
+
+.form-section-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 0 22px;
+    color: #111;
+}
+
+.form-section-title svg {
+    color: #555;
+}
+.form-group input,
+.form-group select,
+.km-wrapper input {
+    background: rgba(251, 248, 250, 1);
+    border: 1px solid rgba(197, 198, 205, 1);
+}
+
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 16px;
+}
+
+.form-group:last-child {
+    margin-bottom: 0;
+}
+
+.form-group label {
+    font-size: 13px;
+    font-weight: 500;
+    color: #555;
+}
+
+.form-group input,
+.form-group select {
+    height: 42px;
+    border: 1px solid rgba(197, 198, 205, 1);
+    border-radius: 10px;
+    padding: 0 14px;
+    font-family: "Kodchasan", sans-serif;
+    font-size: 14px;
+    background: rgba(251, 248, 250, 1);
+    color: #111;
+    outline: none;
+    transition: border-color 0.15s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #111111;
+}
+
+.form-group input::placeholder {
+    color: #C0C0C0;
+}
+
+.form-row {
+    display: grid;
+    gap: 14px;
+}
+
+.form-row-2 { grid-template-columns: 1fr 1fr; }
+.form-row-3 { grid-template-columns: 1fr 1fr 1fr; }
+.form-row-cep { grid-template-columns: 160px 1fr; }
+.form-row-num { grid-template-columns: 120px 1fr; }
+.form-row-cidade { grid-template-columns: 1fr 80px; }
+
+@media (max-width: 1100px) {
+    .form-usuario-layout { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 768px) {
+    .page-header-actions { flex-direction: column; align-items: stretch; gap: 12px; }
+    .topbar-actions { width: 100%; }
+    .btn-cancelar-form, .btn-salvar-form { width: 100%; justify-content: center; }
+    .form-row-2, .form-row-cep,
+    .form-row-num, .form-row-cidade { grid-template-columns: 1fr; }
+    .form-section { padding: 18px; }
+    .informacoes-usuarios { padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .informacoes-usuarios div { width: 100%; }
+}
+
+@media (max-width: 480px) {
+    .form-section { padding: 14px; border-radius: 12px; }
+    .form-page-title { font-size: 20px; }
+    .informacoes-usuarios { grid-template-columns: 1fr; }
+}

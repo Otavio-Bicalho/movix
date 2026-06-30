@@ -1,0 +1,9 @@
+@media ((min-width: 380px) and (max-width: 480px)) {
+    .btn-salvar-form {padding: 0px 20px !important} ;  
+} 
+@media (max-width: 480px) {
+    .btn-salvar-form {padding: 10px 20px !important} ;  
+}
+@media(max-width: 380px) {
+    .btn-salvar-form {padding: 0px 20px !important} ;  
+}

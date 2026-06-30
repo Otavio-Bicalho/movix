@@ -1,0 +1,529 @@
+* {
+    font-family: "Kodchasan", sans-serif;
+}
+
+.clientes-content {
+    display: grid;
+    grid-template-columns: 360px 1fr;
+    gap: 22px;
+    align-items: start;
+}
+
+.app-layout,
+.modal-overlay,
+.escondido {
+    font-family: "Kodchasan", sans-serif;
+}
+
+
+.clientes-lista {
+    background: #ffffff;
+    border: 1px solid #EAEAEA;
+    border-radius: 18px;
+    padding: 22px;
+    max-height: calc(100vh - 160px);
+    overflow-y: auto;
+}
+
+.lista-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 14px;
+}
+
+.lista-header h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+    line-height: 1.3;
+}
+
+.badge-total {
+    background: rgba(30, 41, 59, 1);
+    color: #ffffff;
+    border-radius: 20px;
+    padding: 4px 14px;
+    font-size: 12px;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.cliente-card {
+    display: flex;
+    gap: 12px;
+    padding: 14px;
+    cursor: pointer;
+    transition: background 0.15s ease, border-color 0.15s ease;
+    border: 1px solid transparent;
+    border-bottom: 1px solid #EAEAEA;
+    border-radius: 0;
+    margin-bottom: 0;
+}
+
+.cliente-card:hover {
+    background: #FAFAFA;
+}
+
+.cliente-card.selecionado {
+    border-left: 5px solid #111111;
+    border-radius: 0;
+    background: rgba(208, 225, 251, 0.2);
+}
+
+.cliente-avatar {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    font-weight: 600;
+    flex-shrink: 0;
+}
+
+.cliente-info {
+    min-width: 0;
+}
+
+.cliente-info .cliente-nome {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.cliente-info .cliente-id {
+    font-size: 11px;
+    color: #B0B0B0;
+    margin-left: 4px;
+    font-weight: 400;
+}
+
+.cliente-contato {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    margin-top: 4px;
+    font-size: 13px;
+    color: #777;
+}
+
+.cliente-contato span {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.cliente-contato svg {
+    flex-shrink: 0;
+    color: #B0B0B0;
+}
+
+.lista-vazio {
+    text-align: center;
+    color: #B0B0B0;
+    font-size: 14px;
+    padding: 30px 10px;
+}
+
+.cliente-card:last-child {
+    border-bottom: none;
+}
+
+
+.cliente-perfil {
+    background: #ffffff;
+    border: 1px solid #EAEAEA;
+    border-radius: 18px;
+    padding: 26px;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.perfil-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.perfil-nome h2 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.perfil-nome p {
+    margin: 6px 0 0;
+    font-size: 13px;
+    color: #B0B0B0;
+}
+
+.perfil-acoes {
+    display: flex;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+.btn-editar-cliente,
+.btn-deletar-cliente {
+    border: 1px solid #E2E2E2;
+    border-radius: 10px;
+    background: #ffffff;
+    cursor: pointer;
+    font-family: "Kodchasan", sans-serif;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 9px 16px;
+}
+
+.btn-editar-cliente:hover {
+    background: #F5F5F5;
+}
+
+.btn-deletar-cliente {
+    color: #D9534F;
+    padding: 9px 12px;
+}
+
+.btn-deletar-cliente:hover {
+    background: #FFF1F1;
+    border-color: #FFD7D7;
+}
+
+.perfil-contatos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.contato-badge {
+    background: #F5F5F5;
+    border-radius: 20px;
+    padding: 7px 16px;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #444;
+}
+
+.contato-badge svg {
+    color: #999;
+    flex-shrink: 0;
+}
+
+.perfil-stats {
+    display: flex;
+    gap: 14px;
+}
+
+.stat-box {
+    background: #F5F5F5;
+    border-radius: 14px;
+    padding: 12px 22px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.stat-box .stat-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+    background: rgba(208, 225, 251, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.stat-box .stat-icon svg {
+    color: #2563EB;
+}
+
+.stat-box .stat-icon.stat-icon-aberto svg {
+    color: #444;
+}
+
+.stat-box strong {
+    font-size: 20px;
+    display: block;
+    line-height: 1.1;
+}
+
+.stat-box span {
+    font-size: 11px;
+    color: #999;
+    letter-spacing: 0.5px;
+}
+
+.veiculos-section {
+    background: #F5F5F5;
+    border-radius: 14px;
+    padding: 16px;
+}
+
+.veiculos-section h3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 0 0 0;
+    padding-bottom: 14px;
+    border-bottom: 1px solid #E2E2E2;
+}
+
+.btn-registrar-veiculo {
+    background: none;
+    border: none;
+    color: rgba(9, 20, 38, 1);
+    font-family: "Kodchasan", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.btn-registrar-veiculo:hover {
+    text-decoration: underline;
+}
+
+.veiculo-card {
+    border: 1px solid #E2E2E2;
+    border-radius: 14px;
+    padding: 16px 20px;
+    margin-top: 10px;
+    background: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 14px;
+}
+
+.veiculo-card .veiculo-titulo {
+    font-size: 15px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: rgba(9, 20, 38, 1);
+
+}
+
+.veiculo-ano-badge {
+    background: #F5F5F5;
+    border-radius: 4px;
+    padding: 2px 12px;
+    font-size: 12px;
+    font-weight: 400;
+    color: rgba(80, 95, 118, 1);
+
+}
+
+.veiculo-detalhes {
+    font-size: 13px;
+    color: rgba(80, 95, 118, 1);
+    margin-top: 6px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+
+}
+
+.veiculo-card .veiculo-acoes {
+    display: flex;
+    gap: 8px;
+    flex-shrink: 0;
+}
+
+.veiculo-card .veiculo-acoes button {
+    border: 1px solid #E2E2E2;
+    background: #ffffff;
+    border-radius: 8px;
+    width: 34px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.veiculo-card .veiculo-acoes button:hover {
+    background: #F5F5F5;
+}
+
+.veiculos-vazio {
+    border: 1px dashed #E2E2E2;
+    border-radius: 14px;
+    padding: 30px;
+    text-align: center;
+    color: #B0B0B0;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.perfil-vazio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    min-height: 300px;
+    color: #B0B0B0;
+    font-size: 15px;
+}
+
+.btn-editar-veiculo-card {
+    border: 1px solid #E2E2E2;
+    border-radius: 10px;
+    background: #ffffff;
+    cursor: pointer;
+    font-family: "Kodchasan", sans-serif;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 9px 16px;
+    flex-shrink: 0;
+}
+
+.btn-editar-veiculo-card:hover {
+    background: #F5F5F5;
+}
+
+@media (max-width: 1100px) {
+    .clientes-content {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .clientes-lista {
+        max-height: none;
+    }
+
+    .perfil-header {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .perfil-acoes {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .btn-editar-cliente,
+    .btn-deletar-cliente {
+        flex: 1;
+        justify-content: center;
+    }
+
+    .perfil-stats {
+        flex-direction: column;
+    }
+
+    .stat-box {
+        width: 100%;
+    }
+
+    .veiculo-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .btn-editar-veiculo-card {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .contato-badge {
+        font-size: 11px;
+        padding: 5px 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cliente-perfil {
+        padding: 14px;
+    }
+
+    .clientes-lista {
+        padding: 14px;
+    }
+
+    .perfil-nome h2 {
+        font-size: 18px;
+    }
+
+    .stat-box {
+        padding: 10px 14px;
+    }
+
+    .veiculos-section {
+        padding: 12px;
+    }
+
+    .veiculo-card {
+        padding: 12px;
+    }
+}
+
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 300;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(9, 20, 38, .45);
+}
+
+.modal-overlay.escondido {
+    display: none;
+}
+
+
+.modal {
+    width: min(420px, calc(100vw - 32px));
+    background: #fff;
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 20px 60px rgba(9, 20, 38, .28);
+}
+
+.modal-box {
+    width: min(420px, calc(100vw - 32px));
+    background: #fff;
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 20px 60px rgba(9, 20, 38, .28);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.btn-cancelar-modal {
+    border: solid 1px #111111;
+    border-radius: 10px;
+    padding: 15px 12px 12px 15px;
+    background-color: white;
+}
+
+.btn-confirmar-delete {
+    color: white;
+    border: #111111;
+    background-color: #EB3E3E;
+    border-radius: 10px;
+    padding: 15px 12px 12px 15px;
+}

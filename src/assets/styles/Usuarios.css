@@ -1,0 +1,372 @@
+*{
+    font-family: "Kodchasan", sans-serif;
+}
+.usuarios-content {
+    display: grid;
+    grid-template-columns: 360px 1fr;
+    gap: 22px;
+    align-items: start;
+}
+
+
+.app-layout, .modal-overlay , .escondido{
+    font-family: "Kodchasan", sans-serif;
+}
+
+
+.usuarios-lista {
+    background: #ffffff;
+    border: 1px solid #EAEAEA;
+    border-radius: 18px;
+    padding: 22px;
+    max-height: calc(100vh - 160px);
+    overflow-y: auto;
+}
+
+.lista-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 14px;
+}
+
+.lista-header h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+    line-height: 1.3;
+}
+
+.badge-total {
+    background: rgba(30, 41, 59, 1);
+    color: #ffffff;
+    border-radius: 20px;
+    padding: 4px 14px;
+    font-size: 12px;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.usuario-card {
+    display: flex;
+    gap: 12px;
+    padding: 14px;
+    cursor: pointer;
+    transition: background 0.15s ease, border-color 0.15s ease;
+    border: 1px solid transparent;
+    border-bottom: 1px solid #EAEAEA;
+    border-radius: 0;
+    margin-bottom: 0;
+}
+
+.usuario-card:hover {
+    background: #FAFAFA;
+}
+
+.usuario-card.selecionado {
+    border-left: 5px solid #111111;
+    border-radius: 0;
+    background: rgba(208, 225, 251, 0.2);
+}
+
+.usuario-avatar {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    font-weight: 600;
+    flex-shrink: 0;
+}
+
+.usuario-info {
+    min-width: 0;
+}
+
+.usuario-info .usuario-nome {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.usuario-info .usuario-id {
+    font-size: 11px;
+    color: #B0B0B0;
+    margin-left: 4px;
+    font-weight: 400;
+}
+
+.usuario-contato {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    margin-top: 4px;
+    font-size: 13px;
+    color: #777;
+}
+
+.usuario-contato span {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.usuario-contato svg {
+    flex-shrink: 0;
+    color: #B0B0B0;
+}
+
+.lista-vazio {
+    text-align: center;
+    color: #B0B0B0;
+    font-size: 14px;
+    padding: 30px 10px;
+}
+.usuario-card:last-child {
+    border-bottom: none;
+}
+
+
+.usuario-perfil {
+    background: #ffffff;
+    border: 1px solid #EAEAEA;
+    border-radius: 18px;
+    padding: 26px;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.perfil-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.perfil-nome h2 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.perfil-nome p {
+    margin: 6px 0 0;
+    font-size: 13px;
+    color: #B0B0B0;
+}
+
+.perfil-acoes {
+    display: flex;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+.btn-editar-usuario,
+.btn-deletar-usuario {
+    border: 1px solid #E2E2E2;
+    border-radius: 10px;
+    background: #ffffff;
+    cursor: pointer;
+    font-family: "Kodchasan", sans-serif;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 9px 16px;
+}
+
+.btn-editar-usuario:hover {
+    background: #F5F5F5;
+}
+
+.btn-deletar-usuario {
+    color: #D9534F;
+    padding: 9px 12px;
+}
+
+.btn-deletar-usuario:hover {
+    background: #FFF1F1;
+    border-color: #FFD7D7;
+}
+
+.perfil-contatos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.contato-badge {
+    background: #F5F5F5;
+    border-radius: 20px;
+    padding: 7px 16px;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #444;
+}
+
+.contato-badge svg {
+    color: #999;
+    flex-shrink: 0;
+}
+
+.perfil-stats {
+    display: flex;
+    gap: 14px;
+}
+
+.stat-box {
+    background: #F5F5F5;
+    border-radius: 14px;
+    padding: 12px 22px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.stat-box .stat-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+    background: rgba(208, 225, 251, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.stat-box .stat-icon svg {
+    color: #2563EB;
+}
+
+.stat-box .stat-icon.stat-icon-aberto svg {
+    color: #444;
+}
+
+.stat-box strong {
+    font-size: 20px;
+
+    line-height: 1.1;
+}
+
+.stat-box span {
+    font-size: 11px;
+    color: #999;
+    letter-spacing: 0.5px;
+}
+
+
+.perfil-vazio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    min-height: 300px;
+    color: #B0B0B0;
+    font-size: 15px;
+}
+.informacoes-usuarios div {
+    display: flex;
+    flex-direction: column;
+
+}
+.informacoes-usuarios {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    padding: 0 46px;
+}
+.telefone-secundario input, .email input, .cpf input, .cep input, .rua input, .numero input, .bairro input, .cidade input, .uf input, .tipo-usuario input {
+    background: rgba(251, 248, 250, 1);
+    border: 1px solid rgba(197, 198, 205, 1);
+    border-radius: 8px;
+    border-width: 1px;
+    height: 31px;
+    opacity: 1;
+    top: 32px;
+    width: 100%;
+}
+.telefone-secundario p, .email p, .cpf p, .cep p, .rua p, .numero p, .bairro p, .cidade p, .uf p, .tipo-usuario p {
+    font-family: "Kodchasan", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    color: rgba(80, 95, 118, 1);
+}
+.btn-adicionar-usuario {
+    width: 100%;
+    margin-top: 12px;
+    height: 45px;
+    border: 1px dashed #BDBDBD;
+    border-radius: 12px;
+    background: #ffffff;
+    cursor: pointer;
+    font-family: "Kodchasan", sans-serif;
+    font-size: 15px;
+    color: #555;
+}
+
+.btn-adicionar-usuario:hover {
+    background: #F5F5F5;
+    border-color: #111;
+    color: #111;
+}
+
+@media (max-width: 1100px) {
+    .usuarios-content { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 768px) {
+    .usuarios-lista { max-height: none; }
+    .usuario-perfil { padding: 15px; }
+    .perfil-header { flex-direction: column; gap: 15px; }
+    .perfil-acoes { width: 100%; flex-wrap: wrap; }
+    .btn-editar-usuario, .btn-deletar-usuario { flex: 1; justify-content: center; }
+    .perfil-stats { flex-direction: column; }
+    .stat-box { width: 100%; }
+    .informacoes-usuarios { padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .informacoes-usuarios div { width: 100%; }
+    .telefone-secundario input, .email input, .cpf input,
+    .cep input, .rua input, .numero input, .bairro input,
+    .cidade input, .uf input { width: 100%; max-width: 100%; }
+}
+
+@media (max-width: 480px) {
+    .informacoes-usuarios { grid-template-columns: 1fr; }
+    .usuario-perfil { padding: 12px; }
+    .usuarios-lista { padding: 14px; }
+    .perfil-nome h2 { font-size: 18px; }
+}
+.modal-overlay{
+    position:fixed;
+    inset:0;
+    z-index:300;
+    display:none;
+    background:rgba(9,20,38,.45);
+    align-items:center;
+    justify-content:center;
+}
+
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 300;
+    display: flex;              /* flex por padrão */
+    background: rgba(9, 20, 38, .45);
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-overlay.escondido {
+    display: none;              /* esconde quando tem a classe */
+}
