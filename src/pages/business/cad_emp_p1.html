@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Movix for Business</title>
+  <link rel="stylesheet" href="../../assets/styles/business/cad_empresa.css" />
+  <link rel="icon" href="../../assets/img/logo/movix_forbusiness.svg" type="image/x-icon">
+</head>
+
+<body data-page="p1">
+
+  <nav class="navbar">
+    <a class="navbar-brand" href="#">
+      <span class="brand-movix">Movix</span>
+      <span class="brand-sep">|</span>
+      <span class="brand-sub">for business</span>
+    </a>
+  </nav>
+
+  <div class="page">
+    <div class="page-body">
+
+      <span class="step-badge">Passo 01 de 04</span>
+      <h1 class="page-title">Informações da Empresa</h1>
+      <p class="page-desc">Comece preenchendo os dados fundamentais da sua oficina mecânica para personalizarmos sua
+        experiência.</p>
+
+      <div class="card">
+
+        <div class="field">
+          <label class="field-label" for="nomeOficina">Nome da Oficina</label>
+          <input class="field-input" type="text" id="nomeOficina" placeholder="Ex: Auto Mecânica Precisão" />
+        </div>
+
+        <div class="field-row">
+          <div class="field">
+            <label class="field-label" for="cnpj">CNPJ</label>
+            <input class="field-input" type="text" id="cnpj" placeholder="00.000.000/0000-00" />
+          </div>
+          <div class="field">
+            <label class="field-label" for="telefoneComercial">Telefone Comercial</label>
+            <input class="field-input" type="tel" id="telefoneComercial" placeholder="(11) 99999-9999" />
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="field-label" for="emailAdmin">E-mail Administrativo</label>
+          <input class="field-input" type="email" id="emailAdmin" placeholder="contato@oficina.com.br" />
+        </div>
+
+        <div id="erroP1" class="erro-msg"></div>
+
+        <div class="card-actions">
+          <a class="btn btn--outline" href="cadastro_business.html" onclick="removerinfo1()">Voltar</a>
+          <button type="button" id="btnAvancarP1" class="btn btn--primary" onclick="cad_pt1()">Avançar</button>
+        </div>
+
+      </div>
+
+      <div class="info-box">
+        <span class="info-box-icon">ⓘ</span>
+        <p class="info-box-text">Você poderá editar essas informações posteriormente nas configurações de perfil da
+          oficina.</p>
+      </div>
+
+    </div>
+  </div>
+  <script src="../../assets/scripts/js/business/cad_empresa.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Movix for Business</title>
+  <link rel="stylesheet" href="../../assets/styles/business/cad_empresa.css" />
+  <link rel="icon" href="../../assets/img/logo/movix_forbusiness.svg" type="image/x-icon">
+</head>
+
+<body data-page="p3">
+
+  <nav class="navbar">
+    <a class="navbar-brand" href="#">
+      <span class="brand-movix">Movix</span>
+      <span class="brand-sep">|</span>
+      <span class="brand-sub">for business</span>
+    </a>
+  </nav>
+
+  <div class="page">
+    <div class="page-body">
+
+      <span class="step-badge">Passo 03 de 04</span>
+      <h1 class="page-title">Capacidade e Operações</h1>
+      <p class="page-desc">Configure como sua oficina opera diariamente para otimizar o agendamento de serviços.</p>
+
+
+      <div class="cards-row">
+
+        <div class="card">
+          <div class="card-header">
+
+            <div>
+              <div class="card-header-title">Boxes de Atendimento</div>
+              <div class="card-header-sub">Capacidade física instalada</div>
+            </div>
+          </div>
+          <div class="boxes-label">Número total de boxes</div>
+          <div class="boxes-input-wrap">
+            <input class="boxes-input" type="number" id="numBoxes" value="4" min="1" />
+            <span class="boxes-hash">#</span>
+          </div>
+          <p class="boxes-hint">Isso define quantos veículos podem ser atendidos simultaneamente na oficina.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+
+            <div>
+              <div class="card-header-title">Horário de Funcionamento</div>
+              <div class="card-header-sub">Defina quando sua oficina está aberta</div>
+            </div>
+          </div>
+          <div class="horario-row">
+
+            <span class="horario-day">Segunda – Sexta</span>
+            <input class="horario-time" type="time" id="horaSemanaInicio" required />
+            <span class="horario-sep">até</span>
+            <input class="horario-time" type="time" id="horaSemanaFim" required />
+          </div>
+          <div class="horario-row">
+
+            <span class="horario-day">Sábado</span>
+            <input class="horario-time" type="time" id="horaSabadoInicio" required />
+            <span class="horario-sep">até</span>
+            <input class="horario-time" type="time" id="horaSabadoFim" required />
+          </div>
+        </div>
+
+      </div>
+
+
+
+      <div id="erroP3" class="erro-msg"></div>
+
+    </div>
+  </div>
+
+  <div class="footer-nav">
+    <a class="btn btn--outline" href="cad_emp_p2.html" onclick="removerinfo3()">Voltar</a>
+    <button type="button" id="btnAvancarP3" class="btn btn--primary" onclick="cad_pt3()">Próximo›</button>
+  </div>
+  <script src="../../assets/scripts/js/business/cad_empresa.js"></script>
+</body>
+
+</html>

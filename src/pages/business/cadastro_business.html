@@ -4,26 +4,29 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Movix — Cadastro</title>
-  <link rel="stylesheet" href="../assets/styles/business/pj_userflow.css" />
+  <title>Movix for Business — Cadastro</title>
+  <link rel="stylesheet" href="../../assets/styles/business/pj_userflow.css" />
   <link rel="icon" href="../../assets/img/logo/movix_forbusiness.svg" type="image/x-icon">
 </head>
 
-<body>
+<body data-page="cadastro_user">
   <div class="phone">
 
     <div class="logo-block logo-block--cadastro">
       <div class="logo-title">Movix</div>
+      <div class="logo-sub">for business</div>
     </div>
+
+    <div id="erroMsg" class="erro-msg"></div>
 
     <div class="field">
       <label for="cadNome">Nome</label>
-      <input type="text" id="cadNome" autocomplete="name" />
+      <input type="text" id="cadNome" autocomplete="name" required />
     </div>
 
     <div class="field">
       <label for="cadEmail">E-mail</label>
-      <input type="email" id="cadEmail" autocomplete="email" />
+      <input type="email" id="cadEmail" autocomplete="email" required />
     </div>
 
     <div class="field">
@@ -33,30 +36,31 @@
 
     <div class="field">
       <label for="cadCpf">CPF</label>
-      <input type="text" id="cadCpf" />
+      <input type="text" id="cadCpf" required maxlength="11" />
     </div>
 
     <div class="field">
       <label for="cadSenha">Senha</label>
-      <input type="password" id="cadSenha" autocomplete="new-password" />
+      <input type="password" id="cadSenha" autocomplete="password" required />
     </div>
 
     <div class="field">
       <label for="cadConfirmar">Confirmar Senha</label>
-      <input type="password" id="cadConfirmar" autocomplete="new-password" />
+      <input type="password" id="cadConfirmar" autocomplete="password" required />
     </div>
 
-    <button class="btn-primary">Avançar</button>
+    <button type="button" id="btnAvancarCad" class="btn-primary" onclick="userCad()">Avançar</button>
 
     <p class="link-row">
-      Clique aqui para <a href="loginUser.html">logar</a>
+      Clique aqui para <a href="../business/login_business.html" onclick="removerUserCad()">logar</a>
     </p>
 
     <div class="footer">
-      <a href="business/cadastro_business.html">Cadastrar como empresa</a>
+      <a href="../cadastroUser.html">Cadastrar como usuário</a>
     </div>
 
   </div>
+  <script src="../../assets/scripts/js/business/cad_empresa.js"></script>
 </body>
 
 </html>

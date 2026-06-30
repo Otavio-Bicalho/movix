@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Movix for Business</title>
+  <link rel="stylesheet" href="../../assets/styles/business/cad_empresa.css" />
+  <link rel="icon" href="../../assets/img/logo/movix_forbusiness.svg" type="image/x-icon">
+</head>
+
+<body data-page="p4">
+
+  <nav class="navbar">
+    <a class="navbar-brand" href="#">
+      <span class="brand-movix">Movix</span>
+      <span class="brand-sep">|</span>
+      <span class="brand-sub">for business</span>
+    </a>
+  </nav>
+
+  <div class="page">
+    <div class="page-body">
+
+      <span class="step-badge">Passo 04 de 04</span>
+      <h1 class="page-title">Revisão e Conclusão</h1>
+      <p class="page-desc">Verifique todos os dados abaixo antes de finalizar o seu cadastro no sistema.</p>
+
+      <div class="review-card">
+        <div class="review-card-header">
+          <div class="review-card-title">
+
+            Informações Básicas - Unidade Principal
+          </div>
+
+        </div>
+        <div class="review-grid">
+          <div>
+            <div class="review-field-label">Telefone</div>
+            <div class="review-field-value" id="revTelefone">—</div>
+          </div>
+          <div>
+            <div class="review-field-label">E-mail Administrativo</div>
+            <div class="review-field-value" id="revEmail">—</div>
+          </div>
+          <div>
+            <div class="review-field-label">CNPJ</div>
+            <div class="review-field-value" id="revCnpj">—</div>
+          </div>
+          <div>
+            <div class="review-field-label">Nome Fantasia</div>
+            <div class="review-field-value" id="revNomeOficina">—</div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="review-cards-row">
+
+        <div class="review-card">
+          <div class="review-card-header">
+            <div class="review-card-title">
+
+              Operações - Unidade Principal
+            </div>
+
+          </div>
+          <div class="review-cols">
+            <div>
+              <div class="review-col-label">Horário de Funcionamento</div>
+              <div class="horario-dot" id="revHorarioSemana">—</div>
+              <div class="horario-dot" id="revHorarioSabado">—</div>
+            </div>
+            <div>
+              <div class="review-col-label">Capacidade de Box</div>
+              <div class="review-col-value" id="revBoxes">—</div>
+
+
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-card-header">
+            <div class="review-card-title">
+
+              Localização - Unidade Principal
+            </div>
+
+          </div>
+          <div>
+            <div class="review-field-label">Endereço</div>
+            <div class="review-field-value review-field-spacer" id="revEndereco">—</div>
+            <div class="review-field-label">Cidade / Estado</div>
+            <div class="review-field-value review-field-spacer" id="revCidadeEstado">—</div>
+            <div class="review-field-label">CEP</div>
+            <div class="review-field-value" id="revCep">—</div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <div class="footer-nav">
+    <a class="btn btn--outline" href="cad_emp_p3.html">Voltar</a>
+    <button type="button" id="btnFinalizar" class="btn btn--primary" onclick="cad_pt4()">Finalizar cadastro</button>
+  </div>
+  <script src="../../assets/scripts/js/business/cad_empresa.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Movix for Business</title>
+  <link rel="stylesheet" href="../../assets/styles/business/cad_empresa.css" />
+  <link rel="icon" href="../../assets/img/logo/movix_forbusiness.svg" type="image/x-icon">
+</head>
+
+<body data-page="p2">
+
+  <nav class="navbar">
+    <a class="navbar-brand" href="#">
+      <span class="brand-movix">Movix</span>
+      <span class="brand-sep">|</span>
+      <span class="brand-sub">for business</span>
+    </a>
+  </nav>
+
+  <div class="page">
+    <div class="page-body">
+
+      <span class="step-badge">Passo 02 de 04</span>
+      <h1 class="page-title">Localização da Unidade Principal</h1>
+      <p class="page-desc">Informe o endereço completo da sua oficina. Estes dados serão utilizados para divulgação do
+        estabelecimento e emissão de ordens de serviço.</p>
+
+      <div class="card">
+
+        <div class="field">
+          <label class="field-label" for="cep">CEP</label>
+          <div class="input-wrap">
+            <input class="field-input field-input--icon" type="text" id="cep" placeholder="00000-000" maxlength="9" />
+
+          </div>
+        </div>
+
+        <div class="field-row">
+          <div class="field">
+            <label class="field-label" for="logradouro">Logradouro</label>
+            <input class="field-input" type="text" id="logradouro" placeholder="Ex: Rua das Engrenagens" />
+          </div>
+          <div class="field field--narrow">
+            <label class="field-label" for="numero">Número</label>
+            <input class="field-input" type="text" id="numero" placeholder="123" />
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="field-label" for="bairro">Bairro</label>
+          <input class="field-input" type="text" id="bairro" placeholder="Centro" />
+        </div>
+
+        <div class="field-row">
+          <div class="field">
+            <label class="field-label" for="cidade">Cidade</label>
+            <input class="field-input" type="text" id="cidade" placeholder="São Paulo" />
+          </div>
+          <div class="field field--narrow">
+            <label class="field-label" for="estado">Estado</label>
+            <select class="field-select" id="estado">
+              <option value="">UF</option>
+              <option>AC</option>
+              <option>AL</option>
+              <option>AP</option>
+              <option>AM</option>
+              <option>BA</option>
+              <option>CE</option>
+              <option>DF</option>
+              <option>ES</option>
+              <option>GO</option>
+              <option>MA</option>
+              <option>MT</option>
+              <option>MS</option>
+              <option>MG</option>
+              <option>PA</option>
+              <option>PB</option>
+              <option>PR</option>
+              <option>PE</option>
+              <option>PI</option>
+              <option>RJ</option>
+              <option>RN</option>
+              <option>RS</option>
+              <option>RO</option>
+              <option>RR</option>
+              <option>SC</option>
+              <option>SP</option>
+              <option>SE</option>
+              <option>TO</option>
+            </select>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-nav">
+    <a class="btn btn--outline" href="cad_emp_p1.html" onclick="removerinfo2()">Voltar</a>
+    <button type="button" id="btnAvancarP2" class="btn btn--primary" onclick="cad_pt2()">Avançar →</button>
+  </div>
+  <script src="../../assets/scripts/js/business/cad_empresa.js"></script>
+</body>
+
+</html>
